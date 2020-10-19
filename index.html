@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿AmIconfinated?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script defer src="main.js"></script>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/> 
+
+    <!-- Leaflet JS - Make sure you put this AFTER Leaflet's CSS -->
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="result">
+            <H1 class="yesOrNo">SI</H1>
+        </div>
+        <!-- <label for="districts">Elige un distrito</label>
+                <select name="districts" id="districts">
+                    <option value="Madrid-Retiro">Madrid-Retiro</option>
+                    <option value="Madrid-Salamanca">Madrid-Salamanca</option>
+                    <option value="Madrid-Centro">Madrid-Centro</option>
+                    <option value="Madrid-Arganzuela">Madrid-Arganzuela</option>
+                    <option value="Madrid-Chamartín">Madrid-Chamartín</option>
+                    <option value="Madrid-Tetuán">Madrid-Tetuán</option>
+                    <option value="Madrid-Chamberí">Madrid-Chamberí</option>
+                    <option value="Madrid-Fuencarral-El Pardo">Madrid-Fuencarral-El Pardo</option>
+                    <option value="Madrid-Moncloa-Aravaca">Madrid-Moncloa-Aravaca</option>
+                    <option value="Madrid-Latina">Madrid-Latina</option>
+                    <option value="Madrid-Carabanchel">Madrid-Carabanchel</option>
+                    <option value="Madrid-Usera">Madrid-Usera</option>
+                    <option value="Madrid-Puente de Vallecas">Madrid-Puente de Vallecas</option>
+                    <option value="Madrid-San Blas - Canillejas">Madrid-San Blas - Canillejas</option>
+                    <option value="Madrid-Barajas">Madrid-Barajas</option>
+                    <option value="Madrid-Moratalaz">Madrid-Moratalaz</option>
+                    <option value="Madrid-Ciudad Lineal">Madrid-Ciudad Lineal</option>
+                    <option value="Madrid-Hortaleza">Madrid-Hortaleza</option>
+                    <option value="Madrid-Villaverde">Madrid-Villaverde</option>
+                    <option value="Madrid-Villa de Vallecas">Madrid-Villa de Vallecas</option>
+                    <option value="Madrid-Vicálvaro">Madrid-Vicálvaro</option>
+                </select> -->
+        <p id="nombreDistrito"></p>
+        <p id="tasa"></p>
+        <p id="fecha"></p>
+        <div id="map">
+        </div>
+        <div id="graphic" class="ct-chart ct-perfect-fourth">
+        </div>
+        <footer>
+        </footer>
+    </main>
+</body>
+</html>
